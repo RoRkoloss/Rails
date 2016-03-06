@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>OnlinePetition</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <div class="user_header">
+        <% if current_user %>
+          <%= current_user.email %>.
+          <%= link_to "(Выйти)", session_path("current"), method: "delete" %> 
+        <% else %>
+    	<%= link_to "Зарегистрироваться", new_user_path %> |
+    	<%= link_to "Войти", new_session_path %>
+    	<% end %>
+    </div>
+  </div>
+
+<%= yield %>
+
+</body>
+</html>

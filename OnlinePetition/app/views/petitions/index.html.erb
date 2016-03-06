@@ -1,0 +1,14 @@
+<h1>Последние петиции</h1>
+
+<table  class="table table-bordered">
+  <tr>
+  	<th style="width: 70%">Петиция</th>
+  	<th style="width: 30%">Автор</th>
+  </tr>
+
+<% @petitions.each do |petition| %>
+	<tr>
+	  <td><%= link_to petition.title, petition %></td>
+	  <td><%= petition.user_id %></td>
+    </tr>
+<% end %>
