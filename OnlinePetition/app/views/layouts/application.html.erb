@@ -19,6 +19,14 @@
     </div>
   </div>
 
+<div class="block-right">
+  <%= link_to "Все петиции") %><br>
+  <%= link_to "Создать петицию", new_petition_path %><br>
+  <% if current_user %>
+  <%= link_to "Мои петиции" %><br>
+  <% end %>
+</div>
+
 <%= yield %>
 
 </body>

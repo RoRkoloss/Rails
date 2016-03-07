@@ -19,7 +19,9 @@ class PetitionsController < ApplicationController
   end
 
   private
-    def petition_params
-      params.require(:petition).permit(:title, :body)
-    end
+
+  def petition_params
+    params.require(:petition).permit(:title, :body)
+  end
+
 end

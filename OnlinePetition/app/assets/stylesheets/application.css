@@ -20,9 +20,22 @@
     text-align: right;
     padding: 10px;
     border-bottom: 2px solid lightgray;
+
 }
 
 body{
 
 	background-color: #fff
+}
+
+.block-right{
+    width: 15%;
+    float:right;
+    background: lightgray;
+    color: blue;
+    text-align: center;
+    border: 2px solid lightgray; /* Параметры рамки */
+    padding: 20px; /* Поля вокруг текста */
+    margin-top: 20px;
+    margin-right: 10px;
 }
